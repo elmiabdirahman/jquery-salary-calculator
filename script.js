@@ -61,8 +61,9 @@ function removeEmployee() {
 
 function calcMonthlyCost(annualSalaryTotal, monthlyCostTotal) {
     monthlyCostTotal = annualSalaryTotal / 12;
+    // monthlyCostTotal = monthlyCostTotal.toLocaleString(); 
     if (monthlyCostTotal > 20000) {
-        $('#totalSalary').parent().addClass();
+        $('#totalSalary').parent().addClass('red');
     }
     return monthlyCostTotal;
 }
